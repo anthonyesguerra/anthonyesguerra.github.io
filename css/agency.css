@@ -4,6 +4,21 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ #santa{
+    z-index: 1000;
+    position: fixed;
+    -webkit-animation: floatBubble 10s infinite  normal ease-out;
+    animation: floatBubble 10s infinite  normal ease-out;
+ }
+ @-webkit-keyframes floatBubble {
+    0% {
+        right: 100%;
+    }
+    100% {
+        right: 0%;
+    }
+}
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
